@@ -40,13 +40,14 @@ Climatic variables were collected from the [Worldclim](https://worldclim.org/) p
 
 Soil data were downloaded from the [SoilGrids](https://www.isric.org/explore/soilgrids/faq-soilgrids) database 
 
-## Code
+## Source Code
 
-## Source code
 
-Source code of paper to conduct Random Forect model training, reproduce results and plots contatins in `src.R` file
+Source code of paper to conduct Random Forect model training, reproduce results and plots contatins in `src.R` file - [Code](src.R)
 
 Trained model stored in `models` folder  - [Model](/models/final_final_model.rds)
+
+Code to forecast future dictribution of Heracleum Sosnowskyi under different climate scenarios - [Code](future_climate_distribution.R)
 
 ### Plots
 
@@ -66,4 +67,4 @@ Open `ROC-AUC plots.ipynb` file with Jupyter-notebook
 
 ## License
 
-Distributed under the Creative Commons license. See ``LICENSE`` for more information.
+Distributed under the CC0 1.0 license. See ``LICENSE`` for more information.
