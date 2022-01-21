@@ -70,8 +70,8 @@ bioclim <-
 
 soil <- 
   raster::stack(
-    './input_data/_soc_5-15.asc',
-    './input_data/_cec_5-15.asc'
+    './input_data/soil_data/_soc_5-15.asc',
+    './input_data/soil_data/_cec_5-15.asc'
   )
 
 

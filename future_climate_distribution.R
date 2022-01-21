@@ -66,8 +66,8 @@ bioclim <-
 
 soil <- 
   raster::stack(
-    './input_data/_soc_5-15.asc',
-    './input_data/_cec_5-15.asc'
+    './input_data/soil_data/_soc_5-15.asc',
+    './input_data/soil_data/_cec_5-15.asc'
   )
 
 
@@ -407,12 +407,12 @@ attr(map_c, "info")
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = './input_data/bio1_mean_1.asc',
-      bio_8  = './input_data/bio1_mean_8.asc',
-      bio_10  = './input_data/bio1_mean_10.asc',
-      bio_13  = './input_data/bio1_mean_13.asc',
-      bio_15  = './input_data/bio1_mean_15.asc',
-      bio_19  = './input_data/bio1_mean_19.asc'
+      bio_1  = './input_data/future_climate/CNMR_126/bio1_a.asc',
+      bio_8  = './input_data/future_climate/CNMR_126/bio8_a.asc',
+      bio_10 = './input_data/future_climate/CNMR_126/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/CNMR_126/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/CNMR_126/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/CNMR_126/_bio19_a.asc',
     )
   )
 
@@ -420,15 +420,13 @@ bioclim_future <-
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio1_a.asc',
-      #bio_2  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio2_a.asc',
-      #bio_3  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio3_a.asc',
-      #bio_7  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio7_a.asc',
-      bio_8  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio8_a.asc',
-      bio_10  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/_bio10_a.asc',
-      bio_13  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/_bio13_a.asc',
-      bio_15  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/_bio15_a.asc',
-      bio_19  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/_bio19_a.asc'
+
+      bio_1  = './input_data/future_climate/CanESM5_585/bio1_a.asc',
+      bio_8  = './input_data/future_climate/CanESM5_585/bio8_a.asc',
+      bio_10 = './input_data/future_climate/CanESM5_585/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/CanESM5_585/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/CanESM5_585/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/CanESM5_585/_bio19_a.asc',
     )
   )
 
@@ -438,15 +436,12 @@ bioclim_future <-
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band1_a.asc',
-      #bio_2  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio2_a.asc',
-      #bio_3  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio3_a.asc',
-      #bio_7  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp585/bio7_a.asc',
-      bio_8  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band8_a.asc',
-      bio_10  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band10_a.asc',
-      bio_13  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band13_a.asc',
-      bio_15  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band15_a.asc',
-      bio_19  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band19_a.asc'
+      bio_1  = './input_data/future_climate/CanESM5_126/bio1_a.asc',
+      bio_8  = './input_data/future_climate/CanESM5_126/bio8_a.asc',
+      bio_10 = './input_data/future_climate/CanESM5_126/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/CanESM5_126/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/CanESM5_126/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/CanESM5_126/_bio19_a.asc',
     )
   )
 
@@ -456,12 +451,12 @@ bioclim_future <-
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio1.asc',
-      bio_8  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio8.asc',
-      bio_10  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio10.asc',
-      bio_13  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio13.asc',
-      bio_15  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio15.asc',
-      bio_19  = 'C:/Users/lk311/OneDrive/project/biomod2_video_single_species_modelling/cmip5/10m/bio19.asc'
+      bio_1  = './input_data/future_climate/CanESM5_126/bio1_a.asc',
+      bio_8  = './input_data/future_climate/CanESM5_126/bio8_a.asc',
+      bio_10 = './input_data/future_climate/CanESM5_126/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/CanESM5_126/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/CanESM5_126/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/CanESM5_126/_bio19_a.asc',
     )
   )
 
@@ -469,15 +464,12 @@ bioclim_future <-
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/bio1_a.asc',
-      #bio_2  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band2_a.asc',
-      #bio_3  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band3_a.asc',
-      #bio_7  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band7_a.asc',
-      bio_8  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/bio8_a.asc',
-      bio_10  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/_bio10_a.asc',
-      bio_13  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/_bio13_a.asc',
-      bio_15  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/_bio15_a.asc',
-      bio_19  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp585/_bio19_a.asc'
+      bio_1  = './input_data/future_climate/BCC_CSM2_585/bio1_a.asc',
+      bio_8  = './input_data/future_climate/BCC_CSM2_585/bio8_a.asc',
+      bio_10 = './input_data/future_climate/BCC_CSM2_585/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/BCC_CSM2_585/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/BCC_CSM2_585/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/BCC_CSM2_585/_bio19_a.asc',
     )
   )
 
@@ -485,15 +477,12 @@ bioclim_future <-
 bioclim_future <- 
   raster::stack(
     c(
-      bio_1  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/bio1_a.asc',
-      #bio_2  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band2_a.asc',
-      #bio_3  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band3_a.asc',
-      #bio_7  = 'C:/Users/lk311/Downloads/Biomod/CanESM5/share/spatial03/worldclim/cmip6/7_fut/10m/CanESM5/ssp126/_band7_a.asc',
-      bio_8  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/bio8_a.asc',
-      bio_10  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/_bio10_a.asc',
-      bio_13  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/_bio13_a.asc',
-      bio_15  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/_bio15_a.asc',
-      bio_19  = 'C:/Users/lk311/Downloads/Biomod/CNM/share/spatial03/worldclim/cmip6/7_fut/10m/BCC-CSM2-MR/ssp126/_bio19_a.asc'
+      bio_1  = './input_data/future_climate/BCC_CSM2_126/bio1_a.asc',
+      bio_8  = './input_data/future_climate/BCC_CSM2_126/bio8_a.asc',
+      bio_10 = './input_data/future_climate/BCC_CSM2_126/_bio10_a.asc',
+      bio_13 = './input_data/future_climate/BCC_CSM2_126/_bio13_a.asc',
+      bio_15 = './input_data/future_climate/BCC_CSM2_126/_bio15_a.asc',
+      bio_19 = './input_data/future_climate/BCC_CSM2_126/_bio19_a.asc',
     )
   )
 
@@ -515,8 +504,6 @@ plot(cropped_env_f)
 
 library(rgdal)
 denpasar  <- readOGR('./input_data/RUS_adm0.shp')
-#denpasar <- spTransform(x = denpasar, CRSobj = '+proj=moll +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs')
-#plot(denpasar)
 masked <- mask(x = env_future , mask = denpasar)
 plot(masked)
 cropped_env_f <- crop(x = masked, y = extent(denpasar))
@@ -525,10 +512,10 @@ plot(awt)
 
 awt.df <- as.data.frame(awt)
 
-#all_data <- rbing(pa, )
 
 plot(cropped_env_f$bio_1)
 plot(cropped_env$bio_7)
+
 cropped_env_f$bio_1 <- cropped_env_f$bio_1/10
 cropped_env_f$bio_8 <- cropped_env_f$bio_8/10
 cropped_env_f$bio_10 <- cropped_env_f$bio_10/10
