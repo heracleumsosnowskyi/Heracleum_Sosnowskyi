@@ -82,6 +82,7 @@ env <- stack(a,bioclim)
 denpasar  <- readOGR('./input_data/RUS_adm0.shp')
 masked <- mask(x = env, mask = denpasar)
 cropped_env <- crop(x = masked, y = extent(denpasar))
+cropped_ <- crop(x = masked, y = extent(denpasar))
 plot(cropped_env)
 
 cropped_env <- stack(cropped_env)
